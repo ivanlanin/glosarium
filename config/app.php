@@ -169,26 +169,10 @@ return [
          * Package Service Providers...
          */
 
-        // http://image.intervention.io
-        Intervention\Image\ImageServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
         // https://github.com/cviebrock/eloquent-sluggable
         Cviebrock\EloquentSluggable\ServiceProvider::class,
-
-        // https://github.com/barryvdh/laravel-debugbar
-        Barryvdh\Debugbar\ServiceProvider::class,
-
-        // https://github.com/vinkla/laravel-hashids
-        Vinkla\Hashids\HashidsServiceProvider::class,
-
-        // https://github.com/RoumenDamianoff/laravel-sitemap
-        Roumen\Sitemap\SitemapServiceProvider::class,
-
-        // https://laravelcollective.com/docs/5.3/html#installation
-        Collective\Html\HtmlServiceProvider::class,
-
-        // https://github.com/GrahamCampbell/Laravel-HTMLMin
-        GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -246,13 +230,6 @@ return [
         'URL'          => Illuminate\Support\Facades\URL::class,
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
-
-        'Image'        => Intervention\Image\Facades\Image::class,
-        'Debugbar'     => Barryvdh\Debugbar\Facade::class,
-        'Hashids'      => Vinkla\Hashids\Facades\Hashids::class,
-        'Form'         => Collective\Html\FormFacade::class,
-        'Html'         => Collective\Html\HtmlFacade::class,
-        'HTMLMin'      => GrahamCampbell\HTMLMin\Facades\HTMLMin::class,
     ],
 
 ];
